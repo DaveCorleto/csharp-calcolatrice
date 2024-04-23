@@ -52,6 +52,16 @@ namespace csharp_calcolatrice
             Console.WriteLine(Calcolatrice.MinoreDouble(num1, num2));
 
             Console.WriteLine("\n\n\n\n\n\n");
+
+            Console.WriteLine($"Test per funzionalità di elevamento a potenza \nNumero uno generato: {num1}");
+            Console.WriteLine($"Numero due generato: {num2}");
+            Console.WriteLine($"{num1} elevato a {num2} da come risultato: ");
+            Console.WriteLine(Calcolatrice.ElevaaPower(num1, num2));
+
+            Console.WriteLine($"Test per funzionalità di elevamento a potenza \nNumero uno: 4 ");
+            Console.WriteLine($"Numero due: 6");
+            Console.WriteLine($"4 elevato a 6 da come risultato: ");
+            Console.WriteLine(Calcolatrice.ElevaaPower(4, 6));
         }
     }
 }

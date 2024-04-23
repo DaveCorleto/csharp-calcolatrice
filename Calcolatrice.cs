@@ -101,6 +101,50 @@ namespace csharp_calcolatrice
             return risultato;
         }
 
+        //BONUS 
+        public static long ElevaaPower(int num1, int num2)
+        {
+            long risultato;
+
+            if (num1 == 0 && num2 == 0)
+            {
+                risultato = 1;
+            }
+            else if (num1 == 0 || num2 == 0)
+            {
+                risultato = 1;
+            }
+            else
+            {
+  
+                if (num1 < 0)
+                {
+                    num1 = -num1;
+                }
+                if (num2 < 0)
+                {
+                    num2 = -num2;
+                }
+
+                risultato = 1;
+
+           
+                for (int i = 0; i < num2; i++)
+                {
+                    risultato *= num1;
+
+                    if (risultato > int.MaxValue)
+                    {
+                        Console.WriteLine("Attenzione: il risultato dell'elevamento a potenza supera il massimo valore consentito per un intero.");
+                        break;
+                    }
+                }
+            }
+
+            return risultato;
+        }
+
+
 
         //Metodo per la somma di due numeri Double 
 
