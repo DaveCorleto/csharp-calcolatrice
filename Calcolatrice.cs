@@ -101,7 +101,7 @@ namespace csharp_calcolatrice
             return risultato;
         }
 
-        //BONUS 
+        //BONUS senza usare la libreria Math. E infatti c'è da diventare Math!
         public static long ElevaaPower(int num1, int num2)
         {
             long risultato;
