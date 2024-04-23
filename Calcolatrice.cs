@@ -10,6 +10,8 @@ namespace csharp_calcolatrice
     {
         static Random Rand = new Random();
 
+        //THIS IS POLIMORFISMO GENTE!
+
         // Metodo per generare un numero intero casuale
         public static int GeneraNumeroRandom()
         {
@@ -55,8 +57,52 @@ namespace csharp_calcolatrice
             int risultato = num1 * num2;
             return risultato;
         }
+        // Massimo tra due  interi
+        public static int MassimoTraDueInteri(int num1, int num2)
+        {
+            int risultato;
 
-        //Metodo per la somma di sue numeri Double 
+            if (num1 > num2)
+            {
+                risultato = num1;
+            }
+            else if (num1 < num2)
+            {
+                risultato = num2;
+            }
+            else
+            {
+                Console.WriteLine("I due numeri sono uguali");
+                risultato = num1; 
+            }
+
+            return risultato;
+        }
+
+        // Minimo tra due numeri interi
+        public static int MinimoTraDueInteri(int num1, int num2)
+        {
+            int risultato;
+
+            if (num1 < num2)
+            {
+                risultato = num1;
+            }
+            else if (num1 > num2)
+            {
+                risultato = num2;
+            }
+            else
+            {
+                Console.WriteLine("I due numeri sono uguali");
+                risultato = num1; 
+            }
+
+            return risultato;
+        }
+
+
+        //Metodo per la somma di due numeri Double 
 
         public static double SommanumeriDouble(double numdouble1, double numdouble2)
         {
@@ -80,7 +126,31 @@ namespace csharp_calcolatrice
             return risultato;
         }
 
+        //Maggiore di Double 
 
+        public static double MaggioreDouble(double numdouble1, double numdouble2)
+        {
+            double risultato;
+
+            if (numdouble1 > numdouble2) { risultato = numdouble1; }
+            else if (numdouble2 > numdouble1) { risultato = numdouble2; }
+            else { Console.WriteLine("I due numeri si equivalgono"); risultato = numdouble1; }
+            return risultato;
+
+        }
+
+        //Minore di Double 
+
+        public static double MinoreDouble(double numdouble1, double numdouble2)
+        {
+            double risultato;
+
+            if (numdouble1 < numdouble2) { risultato = numdouble1; }
+            else if (numdouble2 < numdouble1) { risultato = numdouble2; }
+            else { Console.WriteLine("I due numeri si equivalgono"); risultato = numdouble1; }
+            return risultato;
+
+        }
 
     }
 }

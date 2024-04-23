@@ -1,4 +1,6 @@
-﻿namespace csharp_calcolatrice
+﻿using System.Runtime.CompilerServices;
+
+namespace csharp_calcolatrice
 {
     internal class Program
     {
@@ -6,7 +8,6 @@
 
 
         {   
-
             
             int num1 = Calcolatrice.GeneraNumeroRandom();
             Console.WriteLine($"Numero uno generato: {num1}");
@@ -33,7 +34,24 @@
 
             Console.WriteLine($"Ecco la moltiplicazione dei due double: {numdouble1} x {numdouble2} = "); Console.WriteLine(Calcolatrice.MoltiplicaNumeriDouble(numdouble1, numdouble2));
 
+            
+            Console.WriteLine($"Test per funzionalità di Massimo tra due interi \nNumero uno generato: {num1}");
+            Console.WriteLine($"Numero due generato: {num2}");
+            Console.WriteLine($"Tra questi due interi il maggiore è : ");
+            Console.WriteLine(Calcolatrice.MassimoTraDueInteri(num1, num2));
+            Console.WriteLine($"Tra questi due interi il minore è : ");
+            Console.WriteLine(Calcolatrice.MinimoTraDueInteri(num1, num2));
 
+            Console.WriteLine("\n\n\n\n\n\n" );
+
+            Console.WriteLine($"Test per funzionalità di Massimo tra due double: \nNumero uno generato: {numdouble1}");
+            Console.WriteLine($"Numero due generato: {numdouble2}");
+            Console.WriteLine($"Tra questi due double il maggiore è : ");
+            Console.WriteLine(Calcolatrice.MaggioreDouble(num1, num2));
+            Console.WriteLine($"Tra questi due double il minore è : ");
+            Console.WriteLine(Calcolatrice.MinoreDouble(num1, num2));
+
+            Console.WriteLine("\n\n\n\n\n\n");
         }
     }
 }
